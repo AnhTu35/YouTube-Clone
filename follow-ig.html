@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Follow IG</title>
+    <style>
+      p{
+        font-family: Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .row{
+        display: grid;
+        grid-template-columns: 60px 200px 80px;
+        margin-bottom: 20px;
+        align-items: center;
+      }
+
+      .profile-picture{
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        border: none;
+        object-fit: cover;
+        margin-right: 4px;
+        vertical-align: middle;
+        display: inline-block;
+
+      }
+
+      .follow-button{
+        background-color: rgb(29, 155, 240);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        height: 36px;
+        vertical-align: bottom;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      
+      .follow-button:hover{
+        opacity: 0.8;
+      }
+
+      .follow-button:active{
+        opacity: 0.4;
+      }
+
+      .name{
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 1px;
+      }
+
+      .handle, .category{
+        font-size: 14px;
+        margin-bottom: 2px;
+        color: rgb(150, 150, 150);
+      }
+      .handle{
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="row">
+        <div>
+          <img class="profile-picture" src="thumbnails/cat.jpg">
+        </div>
+        <div class="info">
+          <p class="name">oliver</p>
+          <p class="handle">the cat</p>
+          <p class="category">Popular</p>
+        </div>
+          <button class="follow-button">Follow</button>
+      </div>
+
+      <div class="row">
+        <div>
+          <img class="profile-picture" src="thumbnails/cat2.jpg">
+        </div>
+        <div class="info">
+          <p class="name">Mimi</p>
+          <p class="handle">Sleepy Cat</p>
+          <p class="category">Popular</p>
+        </div>
+          <button class="follow-button">Follow</button>
+      </div>
+      
+      <div class="row">
+        <img class="profile-picture" src="thumbnails/dog.jpg">
+      <div class="info">
+        <p class="name">Rex</p>
+        <p class="handle">Happy Bulldog</p>
+        <p class="category">Popular</p>
+      </div>
+      <button class="follow-button">Follow</button>
+    </div>
+      
+  </body>
+</html>
